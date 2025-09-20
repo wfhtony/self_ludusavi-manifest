@@ -1,0 +1,32 @@
+---
+Trails in the Sky 1st Chapter (CLE Asia ver.):
+  cloud:
+    steam: true
+  files:
+    "<home>/Saved Games/CLE/Sora_no_Kiseki_the_1st/savedata":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<home>/Saved Games/CLE/Sora_no_Kiseki_the_1st/setting.json":
+      tags:
+        - config
+      when:
+        - os: windows
+  installDir:
+    Sora No Kiseki the 1st: {}
+  launch:
+    "<base>/sora_1st.exe":
+      - when:
+          - os: windows
+            store: steam
+      - arguments: "-resume_latest"
+        when:
+          - os: windows
+            store: steam
+      - arguments: "-reset_graphics"
+        when:
+          - os: windows
+            store: steam
+  steam:
+    id: 3447040
